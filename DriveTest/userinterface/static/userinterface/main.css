@@ -1,0 +1,202 @@
+body {
+  background: #f3f3f3;
+  margin-top: 5rem;
+}
+
+.navbar-custom{
+    background-color: #000000;
+    font-s
+
+}
+
+
+
+h1, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+h2, p, li {
+	color: #fff
+}
+
+ul {
+  margin: 0;
+}
+
+.bg-steel {
+  background-color: #5f788a;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #000;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.content-section {
+  position: relative;
+  background: #000;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  top: 0;
+  bottom:0;
+  right: 0;
+  left: 0;
+}
+
+label, legend {
+	color: #000;
+}
+
+
+.article-title {
+  color: #444444;
+}
+
+a.article-title:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.article-content, .article-title {
+  white-space: pre-line;
+  color: #ffffff;
+}
+
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+.btn-orange {
+ background-color: #f08c35;
+}
+
+.btn-danger {
+	background-color: transparent;
+
+}
+
+.btn-warning {
+	background-color: transparent;
+	color: #ffffff;
+}
+
+.table-div {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 95%;
+    height: 700px;
+    overflow-y: scroll;
+    border: 2px solid black;
+
+}
+
+.map-div {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 95%;
+    height: 700px;
+    overflow-y: scroll;
+    border: 2px solid black;
+
+}
+
+.graph {
+    position: absolute;
+    top: 250px;
+    bottom: 0;
+    right: 0;
+    left: 2px;
+    margin: auto;
+
+}
+
+.graph1{
+    margin-left: 60px;
+    margin-right: 10px;
+    width: 30%;
+    height: 370px;
+    overflow-y: scroll;
+    border: 2px solid black;
+    float: left;
+}
+
+.graph2{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30%;
+    height: 370px;
+    overflow-y: scroll;
+    border: 2px solid black;
+    float: left;
+}
+
+.graph3{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30%;
+    height: 370px;
+    overflow-y: scroll;
+    border: 2px solid black;
+    float: left;
+}
+
+.uploded {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 20%;
+    height: 700px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.dtHorizontalVerticalExampleWrapper {
+max-width: 600px;
+margin: 0 auto;
+}
+#dtHorizontalVerticalExample th, td {
+white-space: nowrap;
+}
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+bottom: .5em;
+}
+
+.item {
+    margin: auto;
+}

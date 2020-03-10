@@ -1,0 +1,61 @@
+{% extends 'userinterface/base.html' %}
+{% load static %}
+{% block graph %}
+    <!-- <div class="graph">
+
+
+        <div class="graph1">
+            <img src="{% static 'userinterface/graph1.jpg' %}" alt="">
+        </div>
+
+        <div class="graph2">
+            <img src="{% static 'userinterface/graph2.jpg' %}" alt="">
+        </div>
+
+        <div class="graph3">
+            <img src="{% static 'userinterface/networkgraph.png' %}" alt="">
+        </div>
+    </div> -->
+    <div style="margin-left:50px;" class="row">
+  <div class="col-sm-4">
+      <div style="width:540px; height:60px; font-size:20px; text-align:center;" class="alert alert-primary" role="alert">
+  RSCP Analysis
+</div>
+<br>
+      <img src="{% static 'userinterface/graph1.jpg' %}" style="box-shadow:10px 5px lightgrey" alt="">
+
+      <div style="width:540px; font-size:20px; text-align:center; margin-top:30px; " class="alert alert-primary" role="alert">
+  <ul>
+      <li style="color:black"> Best RSCP (Green : 80%) </li>
+      <li style="color:black"> Moderate RSCP (Yellow : 0%) </li>
+      <li style="color:black"> Poor RSCP (Red : 20%) </li>
+  </ul>
+</div>
+  </div>
+  <div class="col-sm-4"><div style="width:540px; height:60px; font-size:20px; text-align:center;" class="alert alert-primary" role="alert">
+RSCP vs Ec/No Analysis
+</div><br>
+<img src="{% static 'userinterface/graph2.jpg' %}" style="box-shadow:10px 5px lightgrey" alt="">
+<div style="width:540px; font-size:20px; height:105px; text-align:center; margin-top:30px;" class="alert alert-primary" role="alert">
+    <ul>
+        <li style="color:black"> Interference (Red : 40%) </li>
+
+    </ul>
+</div>
+</div>
+  <div class="col-sm-4"><div style="width:540px; height:60px; font-size:20px; text-align:center;" class="alert alert-primary" role="alert">
+Network Bandwidth
+</div><br>
+<img src="{% static 'userinterface/networkgraph.png' %}" style="box-shadow:10px 5px lightgrey; width:550px" alt="">
+<div style="width:540px; font-size:20px; text-align:center; margin-top:50px;" class="alert alert-primary" role="alert">
+    <ul>
+        <li style="color:black"> Best RSCP (Green : 80%) </li>
+        <li style="color:black"> Moderate RSCP (Yellow : 0%) </li>
+        <li style="color:black"> Poor RSCP (Red : 20%) </li>
+    </ul>
+</div>
+
+</div>
+</div>
+
+{% endblock %}

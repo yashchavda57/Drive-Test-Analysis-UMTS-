@@ -1,0 +1,96 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Drive Test Analysis</title>
+  </head>
+  <body>
+  <center>  <img src="{% static 'userinterface/index.png' %}" alt="Bsnl Logo"></center>
+    <h1><center>Drive Test Analysis</center></h1>
+
+    <form class="details" action="index.html" method="post">
+
+      <label for="">Area:   </label>
+      <input type="text" name="" value="Kalol">&nbsp
+      <label for="">Pincode:</label>
+      <input type="text" name="" value="302721"><hr>
+
+      <h2>Problem Analysis:</h2><hr>
+
+
+
+    <center><h3>Map View</h3>
+      <table>
+        <tr>
+          <td><u><h3>1. RSCP Analysis</h3></u></td><hr>
+        </tr>
+
+        <tr>
+          <td><img src="rscp.jpg" alt="" height="65%" width="800px"></td>
+
+        </tr>
+        <tr>
+          <td><u><h3>2. Rx Power Analysis</h3></u></td>
+        </tr>
+
+        <tr>
+          <td><img src="rx.jpg" alt="" height="65%" width="800px"></td>
+
+        </tr>
+        <br>
+        <tr>
+          <td><u><h3>3. Ec/Io Analysis</h3></u></td>
+        </tr>
+
+        <tr>
+          <td><img src="ecio.jpg" alt="" height="65%" width="800px"></td>
+
+        </tr>
+        <br>
+
+
+      </table>
+      </center><br>
+      <hr>
+      <center><h3>Graph View</h3><hr>
+       </center>
+       <center>
+         <table>
+           <tr>
+             <td><u><h3>1. RSCP Analysis</h3></u></td>
+           </tr>
+
+           <tr>
+             <td><img src="graph1.jpg" alt="" height="55%" width="500px"></td>
+
+           </tr>
+           <tr>
+             <td><u><h3>2. RSCP versus Ec/No</h3></u></td>
+           </tr>
+
+           <tr>
+             <td><img src="graph2.jpg" alt="" height="55%" width="500px"></td>
+
+           </tr>
+
+
+
+
+         </table>
+         </center>
+
+
+
+
+      <h2>Issues</h2>
+      <p>The area with red color depicts that the repective area suffers network issues.
+      The area with green color depicts that the respective area has a healthy network.</p>
+
+      <h2>Solution</h2>
+      <p></p>
+
+    </form>
+  </body>
+</html>

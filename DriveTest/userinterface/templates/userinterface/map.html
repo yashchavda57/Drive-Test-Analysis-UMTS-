@@ -1,0 +1,104 @@
+{% extends 'userinterface/base.html' %}
+{% block map %}
+        <div style="margin-left:29.5px;width:901.8px;padding:4px;"><h1><div class="alert alert-primary" role="alert" style="text-align:center">
+  RSCP Analysis
+</div></h1></div>
+             <div style="float:right; margin-right:350px; "><div class="alert alert-primary" role="alert">
+                  <ul type="none">
+                      <li style="color:black; font-size:35px; font-weight:bolder;">RSCP problem solution:</li>
+                      <ul>
+                      <li style="color:black; font-size:25px;">Anteena Adjustment</li>
+                      <li style="color:black; font-size:25px;">PICH Power Adjustment</li>
+                          <li style="color:black; font-size:25px;">Using RRU or Micro cells</li>
+                          <li style="color:black; font-size:25px;">Adding new sites</li>
+                          <li style="color:black; font-size:25px;">Azimuth Change</li>
+                      </ul>
+                  </ul>
+                  </div>
+              </div>
+
+
+          <div style="width:900px; height:600px; border:1px solid black; margin-left:30px; overflow:hidden; box-shadow:3px 5px grey">
+
+
+                <ul style="background:wheat">
+                    <li style="color:green;">Good Received Signal Code Power</li>
+                    <li style="color:yellow;">Moderate Received Signal Code Power</li>
+                    <li style="color:red;">Bad Received Signal Code Power</li>
+                </ul>
+                {% include "userinterface/maps.html" %}
+
+          </div>
+
+            <hr>
+            <hr>
+            <br>
+            <br>
+            <br>
+            <br>
+<div style="margin-left:29.5px;width:901.8px;padding:4px;"><h1><div class="alert alert-primary" role="alert" style="text-align:center">
+Rx Analysis
+</div></h1></div>
+<div style="float:right; margin-right:300px;">
+    <div class="alert alert-primary" role="alert">
+                  <ul type="none"><li style="color:black; font-size:35px; font-weight:bolder;">Rx Power problem solution:</li>
+                      <ul>
+                      <li style="color:black; font-size:25px;">Interference</li>
+                      <li style="color:black; font-size:25px;">Low Rx Level</li>
+                      <li style="color:black; font-size:25px;">There might be Hardware Problem</li>
+                  </ul>
+              </div>
+              </div>
+
+          <div style="width:900px; height:600px; border:1px solid black; margin-left:30px; overflow:hidden; box-shadow:3px 5px grey">
+
+
+                <ul style="background:wheat">
+                    <li style="color:green;">Good Received Signal Code Power</li>
+                    <li style="color:yellow;">Moderate Received Signal Code Power</li>
+                    <li style="color:red;">Bad Received Signal Code Power</li>
+                </ul>
+                {% include "userinterface/maps1.html" %}
+
+          </div>
+
+ <hr>
+            <hr>
+            <br>
+            <br>
+            <br>
+            <br>
+
+<div style="margin-left:29.5px;width:901.8px;padding:4px;"><h1><div class="alert alert-primary" role="alert" style="text-align:center">
+Ec/io Analysis
+</div></h1></div>
+<div style="float:right; margin-right:350px;">
+    <div class="alert alert-primary" role="alert">
+                  <ul type="none"><li style="color:black; font-size:35px; font-weight:bolder;">Ec/Io problem solution:</li>
+                      <ul>
+                      <li style="color:black; font-size:25px;">Anteena Adjustment</li>
+                      <li style="color:black; font-size:25px;">PICH Power Adjustment</li>
+                          <li style="color:black; font-size:25px;">Using RRU or Micro cells</li></ul>
+                  </ul>
+              </div>
+              </div>
+
+              </div>
+
+          <div style="width:900px; height:600px; margin-left:30px; overflow:hidden; box-shadow:3px 5px grey">
+
+
+                <ul style="background:wheat">
+                    <li style="color:green;">Good Received Signal Code Power</li>
+                    <li style="color:yellow;">Moderate Received Signal Code Power</li>
+                    <li style="color:red;">Bad Received Signal Code Power</li></ul>
+                </ul>
+                {% include "userinterface/maps2.html" %}
+
+          </div>
+
+
+
+
+
+{% endblock %}

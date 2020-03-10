@@ -1,0 +1,46 @@
+{% extends 'userinterface/base.html' %}
+{% load static %}
+{% block solution %}
+<div class="solution-list" style="text-align:left;margin-left:32%;">
+    <div style="background-color:blue;color:white;padding:7px;font-size:32px;width:600px">This is solutions list</div>
+<h3>Low Rx level might arise due to following issues :</h3>
+<ul>
+    <li>Antenna Orientation and Tilt</li>
+        <ul>
+            <li>Physical check of orientation and tilt</li>
+        </ul>
+    <li>High VSWR value</li>
+        <ul>
+            <li>Check RF connectors and RF cables</li>
+        </ul>
+    <li>Tx Power</li>
+        <ul>
+            <li>Check the DRX power and connector</li>
+        </ul>
+
+</ul>
+<h3>EcNo Good, Rscp Bad</h3>
+   <ol>
+   <li>Purpose to increase level power</li>
+   <li>Adjusting</li>
+   </ol>
+<h3>EcNo Bad, Rscp Good</h3>
+   <ol>
+      <li>Interference</li>
+      <li>Scanning area for checking pilot pollution orexterna; Interference from other band</li>
+  </ol>
+  <h3>EcNo, Bad RSCP Bad</h3>
+     <ol>
+     <li>Poor Coverage</li>
+     <li>Check VSWR</li>
+     </ol>
+<h3>EcNo Good, RSCP Good</h3>
+   <ol>
+      <li>Good RF Condition</li>
+      <li>If Still Error try DT test 3 times</li>
+      <li>If Stil error check BER, Transmission Issue</li>
+  </ol>
+</div>
+
+
+{% endblock %}

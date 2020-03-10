@@ -1,0 +1,46 @@
+{% extends "userinterface/base.html" %}
+{% block table %}
+
+
+    <style>
+            table, th, td {
+            border: 1px solid black;padding: 15px;
+            text-align: left}
+    </style>
+    <div class="table-div">
+
+        <table id="dtHorizontalVerticalExample" class="table table-striped table-bordered table-sm " cellspacing="0"
+        width="50%">
+        {% for row in excel_data %}
+        <tr>
+            {% for cell in row %}
+            <td>
+                {{ cell }}&nbsp;&nbsp;
+            </td>
+            {% endfor %}
+            <tr>
+                {% endfor %}
+
+            </table>
+
+    </div>
+
+    <div style="margin-Left:50px;">
+        <br>
+
+        <form action="{% url "userinterface:table-view" %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="file"
+                   title="Upload excel file"
+                   name="excel_file"
+                   style="border: 1px solid black; padding: 5px;"
+                   required="required">
+            <p>
+                <br>
+            <input type="submit"
+                   value="Upload"
+                   style="border: 1px solid green; padding:5px; border-radius: 2px; cursor: pointer; width:100px; height:50px; color:black; font-size:20px;">
+        </form>
+    </div>
+
+{% endblock %}
